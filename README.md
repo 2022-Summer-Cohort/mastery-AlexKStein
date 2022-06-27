@@ -8,11 +8,11 @@ We need you to help us add some new features and functionality to this website.
 ## The Required Tasks:
 1. Add a hashtag system to our posts.  The hashtag should be connected to the posts in a way that a post can have 
 different hashtags and a hashtag can be associated with different posts.
-  - Create a `Hashtag` POJO and provide the correct JPA entity mapping for it and the `POSTS`
-  - Create a `single-hashtag-template.html` file that matches the uses the same style.css file as the other templates 
+  - (yes) Create a `Hashtag` POJO and provide the correct JPA entity mapping for it and the `POSTS`
+  - (yes) Create a `single-hashtag-template.html` file that matches the uses the same style.css file as the other templates 
     and has a similar style to the other pages.  This page should display the posts associated with it's specfic hashtag
     and provide links to those posts.
-  - Create a `all-hashtags-template.html` file that that matches the uses the same style.css file as the other templates 
+  - (yes) Create a `all-hashtags-template.html` file that that matches the uses the same style.css file as the other templates 
     and has a similar style to the other pages.  This page should display all hashtags in the application and provide 
     links to those individual hashtags.
   - Add an HTML form to the `single-post-template.html` that allows you to add a hashtag to the post you are viewing.
@@ -29,7 +29,7 @@ passing information to the controller about each of the fields you need to fill 
 parameters. You will also need to add a method to the `PostController` to allow for the creation of new posts.
 
 ## Deadline and Grading Criteria
-The deadline for this project is Monday, October 26th, at 9:30am.
+The deadline for this project is July 9th
 If the project is not complete or not pushed up to GitHub at that time it will be evaluated as an _Incomplete_ project.
 
 This is a Pass/Fail assignment, the assignment will be considered passing if it meets the following criteria:
