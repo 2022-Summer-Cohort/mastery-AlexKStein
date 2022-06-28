@@ -26,8 +26,8 @@ public class HashtagController {
         model.addAttribute("hashtags", hashtagRepo.findAll());
         return "all-hashtags-template";
     }
-    @PostMapping("/{id}/addHashtag")
-    public String addHashtag(@PathVariable Long id, @RequestParam String tag) {
+    @PostMapping("/addHashtag")
+    public String addHashtag(@RequestParam String tag) {
         Optional<Hashtag> hashtagOptional = hashtagRepo.findByTagIgnoreCase(tag);
         if (!hashtagOptional.isPresent()) {
             Hashtag hashtag = new Hashtag(tag);
