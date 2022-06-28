@@ -16,21 +16,16 @@ different hashtags and a hashtag can be associated with different posts.
     and has a similar style to the other pages.  This page should display all hashtags in the application and provide 
     links to those individual hashtags.
   - (Yes) Add an HTML form to the `single-post-template.html` that allows you to add a hashtag to the post you are viewing.
-
-[//]: # (  - Create a `HashtagStorage` service class to interact with your JPA repository for hashtags.  It should be able to )
-
-[//]: # (    retrieve a hashtag by the value of its id field and by the value of its name/title field, retrieve all hashtags, and)
-
-[//]: # (    save new and existing hashtags.  )
   - (YES!)Create a `HashTagController` to provide three path mappings, one for individual hashtags, one for all hashtags, and 
  one for adding a hashtag to the system. 
   - (yes) Add a link to the all hashtags endpoint to the header's nav list on all pages.
-2. Add a field to the `Post` POJO for the post's author.  This can be a `String`.  Then change the `single-post-template` 
+
+2. (yes) Add a field to the `Post` POJO for the post's author.  This can be a `String`.  Then change the `single-post-template` 
 and the `Post` constructor to add an author name.  Go to the populator and add an author name to the posts.
-3. Add a form to the `single-category-template` to create a new post for that category.  You should include inputs for
+
+3. Add a form to the `single-topic-template` to create a new post for that topic.  You should include inputs for
 passing information to the controller about each of the fields you need to fill the `Post` POJO's constructor 
 parameters. You will also need to add a method to the `PostController` to allow for the creation of new posts.
-
 
 ## Optional Tasks:
 Try these only when the above are finished and only commit them to the repo if they work and don't break the 

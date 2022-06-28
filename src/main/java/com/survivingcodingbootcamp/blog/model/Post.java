@@ -10,6 +10,7 @@ public class Post {
     @GeneratedValue
     private Long id;
     private String title;
+    private String author;
     @ManyToOne
     private Topic topic;
     @Lob
@@ -20,8 +21,9 @@ public class Post {
     protected Post() {
     }
 
-    public Post(String title, Topic topic, String content, Hashtag...hashtags) {
+    public Post(String title, String author, Topic topic, String content, Hashtag...hashtags) {
         this.title = title;
+        this.author = author;
         this.topic = topic;
         this.content = content;
         this.hashtags = Arrays.asList(hashtags);
@@ -33,6 +35,10 @@ public class Post {
 
     public String getTitle() {
         return title;
+    }
+
+    public String getAuthor() {
+        return author;
     }
 
     public Topic getTopic() {
