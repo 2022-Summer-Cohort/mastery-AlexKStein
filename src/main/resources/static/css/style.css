@@ -42,3 +42,6 @@ a{
 a:hover{
     color: var(--light-highlight);
 }
+.author{
+    color: var(--dark-highlight);
+}

@@ -12,13 +12,8 @@
 
 <body>
 <div class="container">
-    <header class="header">
-        <h1 class="header__title">Surviving Coding Boot Camp</h1>
-        <nav class="header__nav">
-            <div class="header__nav-item"><a href="/" class="header__nav-link">Home</a></div>
-            <div class="header__nav-item"><a href="/hashtags" class="header__nav-link">Hashtags</a></div>
-        </nav>
-    </header>
+    <header th:replace="fragments.html :: header"></header>
+    
     <main class="main-content">
         <section class="main-content__topic topic">
             <h2 th:text="${topic.name}" class="topic__title main-content__title">
@@ -30,6 +25,27 @@
                        class="posts__nav-link"></a>
                 </div>
             </nav>
+        </section>
+        <hr>
+        <section>
+            <br>
+            <br>
+            <h3>Create New Post:</h3>
+            <form th:action="'/topics/'+${id}+'/addPost'" method="post">
+                <label for="postTitle">Title:</label>
+                <input type="text" name="title" id="postTitle">
+                <br>
+                <label for="postAuthor">Author:</label>
+                <input type="text" name="author" id="postAuthor">
+                <br>
+                <label for="postContent">Content:</label>
+                <textarea type="text" name="content" id="postContent" rows="4" cols="50" placeholder="Article/content goes here"></textarea>
+                <br>
+                <label for="postHashtag">Tags:</label>
+                <input type="text" name="hashtag" id="postHashtag">
+                <br>
+                <input type="submit">
+            </form>
         </section>
     </main>
 </div>
