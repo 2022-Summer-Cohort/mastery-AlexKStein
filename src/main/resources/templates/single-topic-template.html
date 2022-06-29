@@ -26,6 +26,27 @@
                 </div>
             </nav>
         </section>
+        <hr>
+        <section>
+            <br>
+            <br>
+            <h3>Create New Post:</h3>
+            <form th:action="'/topics/'+${id}+'/addPost'" method="post">
+                <label for="postTitle">Title:</label>
+                <input type="text" name="title" id="postTitle">
+                <br>
+                <label for="postAuthor">Author:</label>
+                <input type="text" name="author" id="postAuthor">
+                <br>
+                <label for="postContent">Content:</label>
+                <textarea type="text" name="content" id="postContent" rows="4" cols="50" placeholder="Article/content goes here"></textarea>
+                <br>
+                <label for="postHashtag">Tags:</label>
+                <input type="text" name="hashtag" id="postHashtag">
+                <br>
+                <input type="submit">
+            </form>
+        </section>
     </main>
 </div>
 </body>

@@ -28,7 +28,9 @@
                 <h3>Tags: &nbsp;</h3>
                 <a th:each="hashtag:${post.hashtags}" 
                 th:text="${hashtag.tag}"
-                th:href="'/hashtags/'+${hashtag.id}" href="#">#hashtag</a> 
+                th:href="'/hashtags/'+${hashtag.id}" href="#">#hashtag</a>
+            </section> 
+            <section>
                 <hr>
                 <br>
                 <br>

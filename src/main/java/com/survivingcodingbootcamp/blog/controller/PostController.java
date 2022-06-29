@@ -2,6 +2,7 @@ package com.survivingcodingbootcamp.blog.controller;
 
 import com.survivingcodingbootcamp.blog.model.Hashtag;
 import com.survivingcodingbootcamp.blog.model.Post;
+import com.survivingcodingbootcamp.blog.model.Topic;
 import com.survivingcodingbootcamp.blog.repository.HashtagRepository;
 import com.survivingcodingbootcamp.blog.repository.PostRepository;
 import org.springframework.stereotype.Controller;
@@ -43,5 +44,20 @@ public class PostController {
         postRepo.save(post);
         return "redirect:/posts/"+id;
     }
+
+//    @PostMapping("/addPost")
+//    public String addPost( @RequestParam String title, @RequestParam String author, @RequestParam String content, @RequestParam String hashtag){
+//        Optional<Hashtag> hashtagOptional = hashtagRepo.findByTagIgnoreCase(hashtag);
+//        Hashtag newPostTag;
+//        if (!hashtagOptional.isPresent()) {
+//            newPostTag = new Hashtag(hashtag);
+//            hashtagRepo.save(newPostTag);
+//        } else{
+//            newPostTag = hashtagOptional.get();
+//        }
+//        Post newPost = new Post(title, author, "topic", content, newPostTag);
+//
+//        return "redirect:/topics/"+;
+//    }
 
 }

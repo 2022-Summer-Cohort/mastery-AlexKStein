@@ -23,7 +23,7 @@ different hashtags and a hashtag can be associated with different posts.
 2. (yes) Add a field to the `Post` POJO for the post's author.  This can be a `String`.  Then change the `single-post-template` 
 and the `Post` constructor to add an author name.  Go to the populator and add an author name to the posts.
 
-3. Add a form to the `single-topic-template` to create a new post for that topic.  You should include inputs for
+3. (YES!) Add a form to the `single-topic-template` to create a new post for that topic.  You should include inputs for
 passing information to the controller about each of the fields you need to fill the `Post` POJO's constructor 
 parameters. You will also need to add a method to the `PostController` to allow for the creation of new posts.
 
